@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+
+/*Encabezado*/
+
+header{
+  width: 100%;
+  position: sticky;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 3px solid black;
+  background-color: #cecece;
+
+}
+.logo{
+  width: 300px;
+  margin-top: 10px;
+
+}
+
+.menu {
+      display: flex;
+      align-items: flex-end;
+      text-align: right;
+      margin-top: 29px;
+}
+
+
+
+/*Cuerpo*/
+video{
+  width: 100%;
+}
+
+.youtube{
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid black;
+  background-color: #cecece;
+ justify-content: space-around;
+}
+.servicios{
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 3px solid black;
+  background-color: #cecece;
+ justify-content: space-around;
+}
+.letra{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+.letra-chica{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+form{
+  padding: 10px;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.margin-left{
+  margin-left: 10px;
+}
+.margin-right{
+  margin-right: 5px;
+}
+.margin-top{
+  margin-top: 70px;
+}
+.margin-left-full{
+  margin-left: 10px;
+}
+.center{
+  text-align: center;
+}
+.box{
+  display: block;
+  width: 250px;
+  text-align: justify;
+  font-size: 15px;
+}
+.margintop2{
+  margin-top: 20px;
+}
+.box2{
+  display: block;
+  width: 500px;
+  text-align: justify;
+  font-size: 15px;
+}
+.margin{
+  margin: 5px;
+}
+.logo2{
+  width: 400px;
+}
+.margin-bottom{
+  margin-bottom: 50px;
+}
+.iframe{
+  width: 500px; height: 300px;
+}
+.td-none{
+  text-decoration: none;
+}
+
+/*Pie*/
+
+footer{
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+  text-align: center;
+  border: 3px solid black;
+  background-color: #cecece;
+}
+
+.redes {
+  display: flex;
+  text-align: center;
+  align-content: center;
+}
+
+.iconos{
+width: 70px;
+height: 70px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: lighter;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  text-indent: 10px;
+}
+
+img{
+  float: center;
+}
+
+
+
+/*Efectos hover*/
+
+.items, .items2{
+  margin: 0;
+  max-width: 1140px;
+}
+.items2{
+  padding-top:50px;
+}
+.items a, .items2 a{
+  display:inline-block;
+  text-decoration:none;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding-left: 10px;
+  font-weight:200;
+  margin:0 3px;
+  height: 30px;
+  overflow: hidden;
+  text-align: right;
+}
+.items a span{
+  display: inline-block;
+  position: relative;
+  transition: transform 500ms;
+  -webkit-transition: -webkit-transform 500ms;
+  -moz-transition: transform 500ms;
+  
+}
+.items a span:after{
+  content: attr(data-hover);
+  position: absolute;
+  top: -30px;
+  left:0;
+  transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+}
+.items a:hover span,
+.items a:focus span {
+	transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+  -moz-transform: translateY(30px);
+}
+
+
+/*Responsive*/
+
+/*Tablet*/
+@media (min-width: 600px) and (max-width: 1023px){
+  .logo {width: 250px;}
+  .items a, .items2 a{
+    font-size: 15px;
+    padding-left: 5px;
+  }
+  .menu{ 
+    margin-top: 25px;
+    margin-right: 3px;
+    padding: 0px;
+  }
+  .letra{margin-left: 10px}
+  .box2{width: 400px;}
+}
+/*Smartphone*/
+
+@media (max-width: 599px) {
+  .logo {width: 150px;}
+  .items a, .items2 a{
+      font-size: 7px;
+      padding-left: 10px;
+      padding: 0px;
+      height: 10px;
+    }
+  .menu{margin-top: 20px;}
+  .letra{margin-left: 20px}
+  .margin-left{margin-left: 0px;}
+  .margin-top{margin-top: 0px;}
+  .mail{margin-right: 37px;}
+  .box2{width: 250px;}
+  .logo2{width: 250px;}
+  .iframe{width: 360px; height: 160px;}
+}
+  
